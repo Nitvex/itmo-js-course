@@ -1,3 +1,4 @@
+// board https://kodaktor.ru/task_func_1be9d
 function rgbColor(r = 255, g = 255, b = 255) {
   return `rgb(${r}, ${g}, ${b})`;
 }
