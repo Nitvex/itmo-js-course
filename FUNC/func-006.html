@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FUNC-006</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ilya Gosudarev" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" data-plugins="proposal-function-bind">
+      {
+        (function() {
+          const square = function() {
+            return this * this;
+          };
+          console.log(this::square());
+
+          // используйте слово this и оператор двойного двоеточия
+          // чтобы вызов square вернул 25
+          // для этого добавьте нужный атрибут в этот элемент script
+        }.bind(5)());
+      }
+    </script>
+  </body>
+</html>
