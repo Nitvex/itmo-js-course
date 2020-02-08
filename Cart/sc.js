@@ -1,12 +1,12 @@
 let costsMap = new Map();
-let balance = 350;
+let balance = 0;
 let sum = 0;
 const balanceElement = document.querySelector(".balance");
 const sumElement = document.querySelector(".sum");
 
 // initial load of costs
 (async () => {
-  balance = prompt("Сколько у вас денег?", 350);
+  balance = prompt("Сколько у вас денег?");
   balance = Number.isNaN(Number(balance)) ? 350 : balance;
   balanceElement.innerText = balance;
   const goodsResponse = await fetch("https://kodaktor.ru/cart_data.json");
