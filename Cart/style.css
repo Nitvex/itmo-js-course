@@ -1,0 +1,39 @@
+.item {
+    height: 100px;
+    width: 15vw;
+    border: 1px solid black;
+    margin: 0 2.5%;
+    cursor: all-scroll;
+    background-size: 15vw 100px ;
+}
+
+.item.hdd {
+    background-image: url("./images/HDD.jpeg");
+}
+
+.item.sdd {
+    background-image: url("./images/SDD.jpg");
+}
+
+.item.usbdrive {
+    background-image: url("./images/usbdrive.jpg");
+}
+
+.items-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.drag-area {
+    min-height: 30vh;
+    height: 100%;
+    width: calc(45vw + 30px);
+    margin: 10% 25%;
+    border: 2px dashed black;
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: 100px 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding: 10px;
+}

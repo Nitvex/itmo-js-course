@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="items-container">
+      <div
+        class="item hdd"
+        draggable="true"
+        ondragstart="drag(event)"
+        data-item="hdd"
+      ></div>
+      <div
+        class="item sdd"
+        draggable="true"
+        ondragstart="drag(event)"
+        data-item="sdd"
+      ></div>
+      <div
+        class="item usbdrive"
+        draggable="true"
+        ondragstart="drag(event)"
+        data-item="usbdrive"
+      ></div>
+    </div>
+    <div
+      class="drag-area"
+      ondragover="allowDrop(event)"
+      ondrop="drop(event)"
+    ></div>
+    <span>Ваш баланс:</span><div class="balance">350</div>
+    <span>Сумма заказа:</span><div class="sum">0</div>
+    <script src="sc.js"></script>
+  </body>
+</html>
