@@ -1,0 +1,32 @@
+<!-- board https://kodaktor.ru/bind02032018_ce86c -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>BABL_002: bind</title><link rel="stylesheet" href="/css/board2"><base target="_blank">
+   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>  
+ </head>
+ <body>
+   <pre class="task">Свежий вариант <a href="/lab02-03-2018-2.pdf">задания 02.03.18</a> (<a target="_top" href="/babl_002">babl_002</a>)
+      (при нажатии кнопки должны менять своё содержимое на свой id)
+      Вам нужно: 
+      1. Сделать <a href="https://www.youtube.com/watch?v=wdYa1uhuG-I">форк этого борда</a> и добавить информацию об авторе <b>НЕ МЕНЯЯ числа строк в борде</b>
+      2. Исправить одну ошибку в строке 25, добавив недостающую часть кода
+      3. Добавить информацию в строку 18
+      4. Включить в состав веб-портфолио адрес получившегося борда без ?!=
+   </pre>
+   <button id="bt1">button 1</button>
+   <button id="bt2">button 2</button>
+   <script type="text/babel" data-plugins="proposal-function-bind">
+       function clckFunc(){
+           console.log(this);
+         this.textContent = this.id;
+       }
+       document.querySelector('#bt1')
+       .addEventListener('click', clckFunc);
+       document.querySelector('#bt2')
+       .addEventListener('click', ({ target }) => target::clckFunc());
+   </script>
+   <hr>
+    
+ </body>
+</html>
