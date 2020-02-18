@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE table PUBLIC "Nitvex" "http://kodaktor.ru/j/dtd_dbcd8" >
+<table>
+    <student name="Ivanov">
+        <mark subject="Logic">3</mark>
+        <mark subject="Web-design">3</mark>
+        <mark subject="Graphics">5</mark>
+    </student>
+    <student name="Petrova">
+        <mark subject="Multimedia">3</mark>
+        <mark subject="Web-design">4</mark>
+        <mark subject="Graphics">5</mark>
+        <mark subject="Logic">5</mark>
+    </student>
+    <student name="Sidorenko">
+        <mark subject="Multimedia">3</mark>
+        <mark subject="Web-design">4</mark>
+        <mark subject="Graphics">5</mark>
+        <mark subject="Logic">4</mark>
+    </student>
+</table>
