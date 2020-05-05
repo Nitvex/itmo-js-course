@@ -4,7 +4,7 @@
     <input placeholder="power" v-model="power" />
 
     <list-item
-      v-for="index in powerArray"
+      v-for="index in Number(power)"
       :key="index"
       :power="Number(index)"
       :base="Number(base)"
@@ -23,12 +23,7 @@ export default {
   data: () => ({
     power: 0,
     base: 0
-  }),
-  computed: {
-    powerArray() {
-      return Array.from(Array(Number(this.power)).keys());
-    }
-  }
+  })
 };
 </script>
 
